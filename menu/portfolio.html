@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../AAAstagelogoblanco.png" alt="Logo AAAstage" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../final.html">Inicio</a></li>
+                <li><a href="portfolio.html">Portafolio</a></li>
+                <li><a href="sobremi.html">Sobre mí</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br><br>
+        <h1 class="h1">Galería AAA</h1> 
+        <br><br>
+        <div class="gallery">
+            <!-- Photo 1 -->
+            <div class="photo-container">
+                <h2 class="name">AMADY</h2>
+                <div class="photo">
+                    <button class="prev" onclick="changeImage('photo1', -1)">&#10094;</button>
+                    <img id="photo1" src="../ph´s/amady.jpg" alt="Amady">
+                    <button class="next" onclick="changeImage('photo1', 1)">&#10095;</button>
+                </div>
+            </div>
+            <!-- Photo 2 -->
+            <div class="photo-container">
+                <h2 class="name">CAMILA</h2>
+                <div class="photo">
+                    <button class="prev" onclick="changeImage('photo2', -1)">&#10094;</button>
+                    <img id="photo2" src="../ph´s/cami2.jpg" alt="Camila">
+                    <button class="next" onclick="changeImage('photo2', 1)">&#10095;</button>
+                </div>
+            </div>
+            <!-- Photo 3 -->
+            <div class="photo-container">
+                <h2 class="name">ELIZABETH</h2>
+                <div class="photo">
+                    <button class="prev" onclick="changeImage('photo3', -1)">&#10094;</button>
+                    <img id="photo3" src="../ph´s/eli.jpg" alt="Elizabeth">
+                    <button class="next" onclick="changeImage('photo3', 1)">&#10095;</button>
+                </div>
+            </div>
+            <!-- Photo 4 -->
+            <div class="photo-container">
+                <h2 class="name">ALEX</h2>
+                <div class="photo">
+                    <button class="prev" onclick="changeImage('photo4', -1)">&#10094;</button>
+                    <img id="photo4" src="../ph´s/sasha3.jpeg" alt="Alex">
+                    <button class="next" onclick="changeImage('photo4', 1)">&#10095;</button>
+                </div>
+            </div>
+            <!-- Photo 5 -->
+            <div class="photo-container">
+                <h2 class="name">JING</h2>
+                <div class="photo">
+                    <button class="prev" onclick="changeImage('photo5', -1)">&#10094;</button>
+                    <img id="photo5" src="../ph´s/jing.jpg" alt="Jing">
+                    <button class="next" onclick="changeImage('photo5', 1)">&#10095;</button>
+                </div>
+            </div>
+            <!-- Photo 6 -->
+            <div class="photo-container">
+                <h2 class="name">POLINA</h2>
+                <div class="photo">
+                    <img id="photo6" src="../ph´s/polina.jpeg" alt="Polina">
+                </div>
+            </div>
+            <!-- Video -->
+            <div class="photo-container">
+                <h2 class="name">VIEW ME</h2>
+                <div class="photo">
+                    <video controls>
+                        <source src="../videos/tucca.mp4" type="video/mp4">
+                        <source src="../videos/alex.mp4" type="video/mp4">
+                        Tu navegador no soporta la etiqueta de video.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Anna Aira - Todos los derechos reservados</p>
+    </footer>
+    <script src="carousel.js"></script>
+</body>
+</html>

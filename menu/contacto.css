@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+.logo-container {
+    margin-left: 20px;
+}
+
+.logo {
+    height: 50px;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #fff;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Cambiado de height a min-height para asegurar que el contenido se ajuste */
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: #222;
+    border-bottom: 2px solid #f00;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures space-between layout */
+}
+
+h1 {
+    margin: 0;
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    flex-grow: 1; /* Ensures h1 takes up available space */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    max-width: 800px;
+    border: 2px solid #f00;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info h2 {
+    font-size: 2em;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info li {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #f00;
+    text-decoration: none;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #f00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    border-top: 2px solid #d4af37;
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+}

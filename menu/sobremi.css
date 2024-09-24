@@ -1,0 +1,162 @@
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #fff;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Cambiado de height a min-height para asegurar que el contenido se ajuste */
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    border-bottom: 2px solid #f00;
+}
+
+.headline {
+    margin: 0;
+    color: #fff;
+    font-size: 2.5em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.photo-container {
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 280px;
+    height: 250px;
+  
+    border: 3px solid #f00;
+}
+
+.welcome-message {
+    font-size: 2em;
+    color: #f00;
+    margin: 10px 0;
+}
+
+.introduction-text {
+    font-size: 1.2em;
+    color: #333;
+    max-width: 1200px;
+	text-align: center;
+	
+}
+
+.demi {
+    text-align: justify;
+}
+
+.skills-section {
+    margin-top: 40px;
+    text-align:justify;
+}
+
+.skills-title {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+	text-align: center;
+}
+
+.progress-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 8px solid #f00; /* Se añadió un borde rojo */
+    background-clip: border-box;
+}
+
+.circle::before {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.circle[data-progress="100"] {
+    background: conic-gradient(#f00 0% 100%, #fff 0%);
+}
+
+.circle[data-progress="90"] {
+    background: conic-gradient(#f00 0% 90%, #fff 90%);
+}
+
+.circle[data-progress="75"] {
+    background: conic-gradient(#f00 0% 75%, #fff 75%);
+}
+
+.circle[data-progress="50"] {
+    background: conic-gradient(#f00 0% 50%, #fff 50%);
+}
+
+.circle[data-progress="25"] {
+    background: conic-gradient(#f00 0% 25%, #fff 25%);
+}
+
+.skill p {
+    font-size: 1.2em;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    border-top: 2px solid #f00;
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+}
